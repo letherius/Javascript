@@ -1,60 +1,32 @@
-let a = 'Letherius';
-let b = 'break';
-let c = 'continue';
-let d = 'delete';
-let e = 'export';
-let f = 'function';
-let g = 'global';
-let h = 'hypothesis';
-let i = 'integer';
-let j = 'justify';
-let k = 'keyword';
-let l = 'left';
-let m = 'miller';
-let n = 'numerical';
-let o = 'object';
-let p = 'property';
-let q = 'question';
-let r = 'receiver';
-let s = 'string';
-let t = 'type';
+let product;
+let price=1000;
+let quantity=1;
+let cart=1.0;
+let tax=0.04;
 
-document.write(`<h1>${a}</h1>`)
+let user1="admin";
+let pass1="password";
 
-document.write(`<h1>${b}</h1>`)
+let userName=prompt('Enter your username:"admin" ');
+let password=prompt('Enter your password:"password" ');
+console.log(userName,password);
 
-document.write(`<h1>${c}</h1>`)
+function Checkout(){
+    product=prompt("What are you Buying?")
+    quantity=prompt("How many would you like to purchase?")
+    cart=price*quantity
+    total=(cart*tax) + cart
+    console.log(product ,quantity ,cart , tax, total)}
 
-document.write(`<h1>${d}</h1>`)
+function displayInfo(){
+    document.write(`
+   <p>Product: ${product}</p>
+   <p>Quantity: ${quantity}</p>
+   <p>Cart: ${cart}</p>
+   <p>Tax: ${tax}</p>
+   <p>Total: ${total}</p>
+   `)
+}
+Checkout()
+displayInfo()
 
-document.write(`<h1>${e}</h1>`)
-
-document.write(`<h1>${f}</h1>`)
-
-document.write(`<h1>${g}</h1>`)
-
-document.write(`<h1>${h}</h1>`)
-
-document.write(`<h1>${i}</h1>`)
-
-document.write(`<h1>${j}</h1>`)
-
-document.write(`<h1>${k}</h1>`)
-
-document.write(`<h1>${l}</h1>`)
-
-document.write(`<h1>${m}</h1>`)
-
-document.write(`<h1>${n}</h1>`)
-
-document.write(`<h1>${o}</h1>`)
-
-document.write(`<h1>${p}</h1>`)
-
-document.write(`<h1>${q}</h1>`)
-
-document.write(`<h1>${r}</h1>`)
-
-document.write(`<h1>${s}</h1>`)
-
-document.write(`<h1>${t}</h1>`)
